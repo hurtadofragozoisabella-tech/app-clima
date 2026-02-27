@@ -1,15 +1,15 @@
-# App Web del Clima
+App Web del Clima
 
-## Descripción
+Descripción
 Aplicación web funcional desarrollada con HTML, CSS y JavaScript que consume la API de OpenWeather para mostrar datos meteorológicos en tiempo real.
 
-## Tecnologías utilizadas
+Tecnologías utilizadas
 - HTML5 semántico
 - CSS3 responsivo
 - JavaScript (Fetch API)
 - API externa OpenWeather
 
-## Funcionalidades
+Funcionalidades
 - Búsqueda por ciudad
 - Validación de formulario
 - Renderizado dinámico
@@ -17,8 +17,8 @@ Aplicación web funcional desarrollada con HTML, CSS y JavaScript que consume la
 - Cambio de fondo según clima
 - Diseño responsivo
 
-## Enlace en vivo
+Enlace en vivo
 (https://hurtadofragozoisabella-tech.github.io/app-clima/)
 
-## Autora
+Autora
 Isabella Hurtado
