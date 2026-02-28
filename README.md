@@ -1,34 +1,20 @@
-Sky Up - App Web del Clima
+Sky Up - App del Clima
+Descripción:
+Sky Up es una aplicación web que permite consultar el clima actual y el pronóstico de los próximos cinco días de cualquier ciudad. La aplicación utiliza la API pública de OpenWeather para obtener datos meteorológicos en tiempo real. El proyecto integra HTML, CSS y JavaScript, incluyendo elementos dinámicos, consumo de API externa y diseño responsivo adaptable a dispositivos móviles.
 
-Sky Up es una aplicación web desarrollada como proyecto final para la materia de Desarrollo Web.
-Permite consultar el clima actual y el pronóstico de 5 días de cualquier ciudad utilizando una API externa.
+Objetivo del proyecto:
+Desarrollar una aplicación web funcional que cumpla con los siguientes requisitos: uso de HTML semántico, diseño responsivo con CSS, interactividad con JavaScript, consumo de API externa
 
-Descripción del Proyecto La aplicación permite al usuario:
+Tecnologías utilizadas: HTML5, CSS3, JavaScript, API OpenWeather, GitHub, GitHub Pages
 
-Buscar el clima de cualquier ciudad. Visualizar temperatura actual, descripción, humedad, viento y sensación térmica. Consultar el pronóstico de los próximos 5 días. Cambiar entre modo claro y modo oscuro. Ver fecha y hora en tiempo real. Guardar automáticamente la última ciudad buscada.
+Funcionalidades: Búsqueda del clima por nombre de ciudad, visualización del clima actual, pronóstico de cinco días, modo oscuro, reloj en tiempo real
 
-Este proyecto integra HTML, CSS y JavaScript con consumo de API externa. Tecnologías Utilizadas
+Estructura del proyecto: index.html estructura semántica de la aplicación, estilos.css diseño visual y responsividad, script.js lógica, interacción y consumo de API
 
-HTML5 (estructura semántica) CSS3 (Flexbox, diseño responsivo, modo oscuro) JavaScript (DOM, eventos, fetch, localStorage) API de OpenWeather
 
-Se utilizó la API pública de: (ca5663b459fd4b7a719dae1f985fe016)
+La aplicación se encuentra publicada en: https://hurtadofragozoisabella-tech.github.io/app-clima/
 
-OpenWeather
-https://openweathermap.org/
 
-Endpoints utilizados: Clima actual Pronóstico de 5 días
+Cumplimiento de requisitos técnicos: HTML semántico correctamente estructurado, CSS responsivo con media queries, JavaScript interactivo, consumo de API externa (OpenWeather), publicación en la nube mediante GitHub Pages
 
-Funcionalidades Técnicas HTML semántico (header, main, section, footer)
-Diseño responsivo adaptable a dispositivos móviles
-Interacción dinámica con JavaScript
-Consumo de API externa con fetch
-Manejo de errores
-Almacenamiento local con localStorage
-Modo oscuro dinámico
-
-Diseño y Usabilidad La interfaz fue diseñada con un enfoque limpio y minimalista, priorizando la claridad visual y la facilidad de uso.
-Se implementó diseño responsivo para que funcione correctamente en dispositivos móviles y de escritorio.
-
-Enlace en Vivo 
-
-Autor Isabella Hurtado Fragozo
+Autora: Isabella Hurtado Fragozo
