@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- ===============================
+         META & TÍTULO
+    ================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Up - App del Clima</title>
+
+    <!-- ===============================
+         ESTILOS
+    ================================ -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ===============================
+         HEADER
+    ================================ -->
+    <header>
+        <h1>Sky Up - Consulta el Clima</h1>
+        <button id="modoBtn">Modo Oscuro</button>
+    </header>
+
+    <!-- ===============================
+         CONTENIDO PRINCIPAL
+    ================================ -->
+    <main>
+
+        <!-- ===============================
+             BUSCADOR
+        ================================ -->
+        <section class="buscador">
+            <label for="ciudadInput" style="display:none;">Buscar ciudad</label>
+            <input type="text" id="ciudadInput" placeholder="Escribe una ciudad">
+            <button id="buscarBtn">Buscar</button>
+        </section>
+
+        <!-- ===============================
+             CLIMA ACTUAL
+        ================================ -->
+        <section class="card">
+
+            <h2 id="ciudad">Ciudad</h2>
+
+            <img
+                id="iconoClima"
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                alt="Icono del clima actual"
+            >
+
+            <p id="descripcion">Descripción</p>
+
+            <p class="temp">
+                <span id="temperatura">--</span> °C
+            </p>
+
+            <!-- Información extra -->
+            <div class="extra-info">
+
+                <div class="info-item">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/728/728093.png"
+                        alt="Humedad"
+                    >
+                    <p><span id="humedad">--</span>%</p>
+                </div>
+
+                <div class="info-item">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+                        alt="Velocidad del viento"
+                    >
+                    <p><span id="viento">--</span> m/s</p>
+                </div>
+
+                <div class="info-item">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/1684/1684375.png"
+                        alt="Sensación térmica"
+                    >
+                    <p><span id="sensacion">--</span> °C</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===============================
+             PRONÓSTICO
+        ================================ -->
+        <section class="pronostico">
+
+            <!-- Fecha y hora -->
+            <section class="fecha-hora">
+                <p id="fecha"></p>
+                <p id="hora"></p>
+            </section>
+
+            <h3>Pronóstico 5 Días</h3>
+
+            <div id="forecastContainer" class="forecast-container"></div>
+
+        </section>
+
+    </main>
+
+    <!-- ===============================
+         FOOTER
+    ================================ -->
+    <footer>
+        <p>Sky Up - App clima</p>
+    </footer>
+
+    <!-- ===============================
+         SCRIPT
+    ================================ -->
+    <script src="script.js"></script>
+
+</body>
+</html>

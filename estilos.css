@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* =====================================================
+   BODY
+===================================================== */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #74b9ff, #dfe6e9);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+/* =====================================================
+   HEADER
+===================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+/* =====================================================
+   MAIN LAYOUT 
+===================================================== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+/* =====================================================
+   BUSCADOR
+===================================================== */
+.buscador {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #0984e3;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #0652dd;
+}
+
+
+/* =====================================================
+   CARD CLIMA
+===================================================== */
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#iconoClima {
+    width: 120px;
+    margin: 10px 0;
+}
+
+.temp {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/* =====================================================
+   INFORMACIÓN EXTRA
+===================================================== */
+
+.extra-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.info-item img {
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   PRONÓSTICO 
+===================================================== */
+
+.pronostico {
+    width: 320px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.forecast-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.forecast-card img {
+    width: 40px;
+}
+
+
+/* =====================================================
+   FECHA Y HORA
+===================================================== */
+
+.fecha-hora {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fecha-hora p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.fecha-hora p:last-child {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: white;
+}
+
+
+/* =====================================================
+   MODO OSCURO
+===================================================== */
+
+.dark {
+    background: linear-gradient(to bottom, #2c3e50, #000);
+    color: white;
+}
+
+.dark header,
+.dark footer {
+    background: #1e272e;
+}
+
+.dark .card,
+.dark .forecast-card {
+    background: #2f3640;
+}
+
+.dark input {
+    background: #353b48;
+    color: white;
+    border: none;
+}
+
+.dark button {
+    background: #00a8ff;
+}
+
+.dark .fecha-hora {
+    background: rgba(47, 54, 64, 0.8);
+}
+
+
+/* =====================================================
+   RESPONSIVE (CELULAR)
+===================================================== */
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .card,
+    .pronostico {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .forecast-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .forecast-card {
+        min-width: 85px;
+        flex-shrink: 0;
+    }
+
+    .buscador {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
+
+
+/* Ocultar barra de scroll móvil */
+.forecast-container::-webkit-scrollbar {
+    display: none;
+}
